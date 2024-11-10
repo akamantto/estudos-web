@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 10px;
+}
+
+#cabecalho{
+    height: 15vh;
+    width: 100%;
+    background-color: orange;
+    margin-bottom: 10px;
+}
+#menu{
+    height: 70vh;
+    width: 18%;
+    background-color: greenyellow;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#principal{
+    height: 70vh;
+    width: 60%;
+    background-color: lightgray;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#lado{
+    height: 70vh;
+    width: 18%;
+    background-color: lightblue;
+    float: left;
+}
+#rodape{
+    clear: both;
+    height: 15vh;
+    width: 100%;
+    background-color: pink;
+}
