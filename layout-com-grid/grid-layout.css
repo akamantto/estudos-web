@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: hsla(84, 34%, 78%, 0.679);
+}
+.container-grid{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav"
+                        "main main main main"
+                        "content1 content2 content3 content4"
+                        "footer footer footer footer";
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 690px;
+    width: 100%;
+    height: 100%;
+    background-color: black ;
+    grid-area: nav;
+}
+#img-logo{
+    background-color: transparent;
+}
+#nav-bar img{
+    max-width:20vw;
+    max-height: 10vh;
+    background-color: black
+}
+
+#nav-bar ul, a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+#nav-bar li{
+    padding: 1em;
+    margin-right: 3em;
+    background-color: transparent;
+}
+#main{
+    background-image: url(images/happy-family.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: main;
+    grid-column: span 2;
+    margin: 1vh 1vh;
+}
+.texto-main{
+    grid-column-start:span 2;
+    display: flex;
+    text-align: left;
+    padding: 1vh;
+
+}
+.texto-main h1{
+    width: 70%;
+    height: 70%;
+    font-size: 10vh;
+    color: #63872c;
+    font-family: Raleway, sans-serif;
+}
+#aside{
+    background-color: blueviolet;
+    grid-template: aside;
+    grid-row-start: span 3;
+    grid-row-start: span 2;
+}
+.content{
+    padding: 10px;
+    background-color: yellow;
+}
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+#content4{
+    grid-area: content4;
+}
+#footer{
+    background-color: aquamarine;
+    grid-area: footer;
+}
