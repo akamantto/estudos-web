@@ -204,6 +204,10 @@ h2{
         grid-template-rows: repeat(5, auto);
     }
 
+    #main{
+        background-image: none;
+    }
+
     .content {
         grid-template-columns: 1fr;
 }
