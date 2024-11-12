@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    box-sizing: border-box;
     background-color: black ;
     grid-area: nav;
 }
@@ -41,6 +42,8 @@
 }
 
 #nav-bar ul, a{
+    margin: 0;
+    padding: 0;
     display: flex;
     list-style: none;
     text-decoration: none;
@@ -49,7 +52,6 @@
 }
 #nav-bar li{
     padding: 1em;
-    margin-right: 3em;
     background-color: transparent;
 }
 #main{
