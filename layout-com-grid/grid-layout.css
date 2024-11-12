@@ -10,7 +10,6 @@
     width: 100%;
     height: auto;
 }
-
 .container-grid{
     display: grid;
     height: 100vh;
@@ -31,24 +30,38 @@
 #nav-bar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
+    padding-right: 3em;
+    padding-left: 3em;
     box-sizing: border-box;
-    background-color: black ;
+    background-color: rgb(27, 56, 39) ;
     grid-area: nav;
 }
-#img-logo{
-    background-color: transparent;
-}
-
-#nav-bar ul, a{
+.div-logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
     margin: 0;
     padding: 0;
+    width: fit-content;
+    background-color: transparent;
+    color: black;
+    font-size: 2em;
+    font-family: monospace;
+    text-shadow: 1px 1px 10px rgb(45, 179, 83);
+
+}
+#nav-bar ul, a{
+    width: fit-content;
     display: flex;
     list-style: none;
     text-decoration: none;
-    color: white;
-    background-color: transparent;
+    color: black;
+    font-family: monospace;
+    font-size: 0.7em;
+    background-color : transparent;
+    text-shadow: 1px 1px 7px rgb(254, 254, 254);
 }
 #nav-bar li{
     padding: 1em;
@@ -166,9 +179,24 @@ h2{
     margin-top: 5vh;
     
 }
-#footer{
-    background-color: black;
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(27, 56, 39) ;
     grid-area: footer;
+}
+
+.footer a{
+    width: fit-content;
+    margin: 1em;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
 }
 
 @media (max-width: 768px) {

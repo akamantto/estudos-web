@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout-com-grid/grid-layout.css">
-    <title>Meu Carrinho</title>
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="layout-com-grid/carrinho.css">
 </head>
 <body>
-    Carrinho
+    <div class="container">
+        <h1>Carrinho de Compras</h1>
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="detalhes">
+                    <h2>(TOP) Whey Protein Concentrado (1KG) - Growth Supplements</h2>
+                    <p>Quantidade: 2</p>
+                    <p>Preço: R$119,70</p>
+                </div>
+                <button class="remover-produto">Remover</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>Total: R$239,40</h3>
+            <button class="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </div>
 </body>
 </html>
