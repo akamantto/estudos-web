@@ -7,6 +7,8 @@
     font-size: 20px;
     box-sizing: border-box;
     background-color: hsla(84, 34%, 78%, 0.679);
+    width: 100%;
+    height: auto;
 }
 
 .container-grid{
