@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout-com-grid/grid-layout.css">
-    <title>Whey</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produto - Whey Protein</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        background-color: hsla(84, 34%, 78%, 0.679);
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: hsla(84, 34%, 78%, 0.679);
+    }
+
+    .container {
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nome {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+        background-color: transparent;
+    }
+
+    .preco {
+        font-size: 20px;
+        color: #4CAF50;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+
+    .descricao {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+    .tabela{
+        background-color: transparent;
+    }
+    .tabela img {
+        max-width: 50%;
+        height: auto;
+        background-color: transparent;
+    }
+    .img-whey{
+        max-width: 40%;
+        height: auto;
+        background-color: transparent;
+    }
+</style>
 </head>
 <body>
-    
+
+<div class="container">
+    <img class="img-whey" src="Cards/images/whey-removebg-preview.png">
+    <h1 class="nome">Whey Protein Concentrado (1KG)</h1>
+    <div class="preco">R$ 119,70</div>
+    <p class="descricao">
+        O Whey Protein Concentrado é ideal para quem busca ganhar massa muscular e melhorar a recuperação pós-treino. Com alta concentração de proteínas e aminoácidos essenciais, é perfeito para incluir na dieta de quem treina intensamente.
+    </p>
+    <div class="tabela">
+        <img src="layout-com-grid/images/tabela-whey.png">
+    </div>
+</div>
+
 </body>
 </html>
