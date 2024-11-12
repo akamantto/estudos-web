@@ -8,35 +8,34 @@
     box-sizing: border-box;
     background-color: hsla(84, 34%, 78%, 0.679);
 }
+
 .container-grid{
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-gap: 3px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1fr 1fr;
+    grid-template-rows: repeat(10,auto);
     grid-template-areas: "nav nav nav nav"
-                        "main main main main"
-                        "content1 content2 content3 content4"
+                        "main-img main-img main-texto main-texto"
+                        "txt txt txt txt"
+                        "content content content content"
+                        "content content content content"
+                        "content content content content"
+                        "content content content content"
+                        "content content content content"
+                        "content content content content"
                         "footer footer footer footer";
 }
 #nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 690px;
     width: 100%;
-    height: 100%;
     background-color: black ;
     grid-area: nav;
 }
 #img-logo{
     background-color: transparent;
-}
-#nav-bar img{
-    max-width:20vw;
-    max-height: 10vh;
-    background-color: black
 }
 
 #nav-bar ul, a{
@@ -56,47 +55,112 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    grid-area: main;
-    grid-column: span 2;
-    margin: 1vh 1vh;
+    grid-area: main-img;
 }
 .texto-main{
-    grid-column-start:span 2;
-    display: flex;
-    text-align: left;
     padding: 1vh;
+    grid-area: main-texto;
 
 }
 .texto-main h1{
-    width: 70%;
-    height: 70%;
-    font-size: 10vh;
+    font-size: 8vh;
     color: #63872c;
     font-family: Raleway, sans-serif;
+    padding: 3vw;
+    text-shadow: 1px 1px 1px black;
 }
-#aside{
-    background-color: blueviolet;
-    grid-template: aside;
-    grid-row-start: span 3;
-    grid-row-start: span 2;
+
+.txt-promocoes{
+    grid-area:txt;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+    border-top-style: solid;
+    border-color: #63872c;
 }
+
+h2{
+    font-size: 6vh;
+    color: #63872c;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    padding-left: 2vw ;
+    padding-top: 4vh;
+    color: black;
+    text-shadow: 0px 1px 0px greenyellow;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+    border-radius: 23px;
+    padding:20px;
+    background-color: #4c804596;
+    box-sizing: border-box;
+
+}
+.card img{
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+}
+.nome{
+    color: black;
+    font-size: 30%;
+}
+.card span{
+    font-size: 6vh;
+    color: green;
+    background-color: transparent;
+}
+.card button{
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    width: 90%;
+    height: 8vh;
+}
+.card button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+    
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+}
+
 .content{
-    padding: 10px;
-    background-color: yellow;
-}
-#content1{
-    grid-area: content1;
-}
-#content2{
-    grid-area: content2;
-}
-#content3{
-    grid-area: content3;
-}
-#content4{
-    grid-area: content4;
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1vh;
+    padding: 5vw;
+    margin-top: 5vh;
+    
 }
 #footer{
-    background-color: aquamarine;
+    background-color: black;
     grid-area: footer;
+}
+
+@media (max-width: 768px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+}
 }
