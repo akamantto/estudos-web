@@ -158,13 +158,37 @@ h2{
     grid-area: footer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
     }
 
     .content {
         grid-template-columns: 1fr;
-}
+        gap: 2vh;
+        padding: 5vw 2vw;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card img {
+        width: 80%;  /* Ajuste a largura da imagem */
+        height: auto;
+    }
+
+    .card h1 {
+        font-size: 1.2em;  /* Aumenta o tamanho do título */
+    }
+
+    .card span {
+        font-size: 1.5em;  /* Aumenta o tamanho do preço */
+    }
+
+    .card button {
+        font-size: 1.2em;  /* Aumenta o tamanho do botão */
+        height: 10vh;  /* Ajusta a altura do botão */
+    }
 }
