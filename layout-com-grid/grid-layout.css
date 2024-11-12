@@ -127,16 +127,25 @@ h2{
     font-size: 100%;
     color: green;
     background-color: transparent;
+    text-align: center;
 }
 .card button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: green;
     border: none;
     border-radius: 15px;
-    color: white;
-    text-align: center;
-    font-size: 100%;
     width: 90%;
     height: 20%;
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
 }
 .card button:hover{
     background-color: darkgreen;
